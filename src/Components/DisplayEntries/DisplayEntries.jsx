@@ -12,7 +12,7 @@ const DisplayEntries = (props) => {
         <tbody>
           {props.parentEntries.map((entry, index)=> {
             return (
-              <tr key={index}>
+              <tr key={index}> {/* if you swap this out for date that will give us the date = bonus question */}
                 <td>{index + 1}</td>
                 <td>{entry.weight}</td>
                 <td>{entry.date}</td>
